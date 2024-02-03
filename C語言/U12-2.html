@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U12-2鍵盤移位</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U12-2 鍵盤移位</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>把手放在鍵盤上時，稍不注意就會往右錯一位。這樣，輸入Q會變成輸入W，輸入J會變成輸入K等。<br>
+                輸入一個錯位後敲出的字串(所有字母均大寫)，輸出打字員本來想打出的句子。輸入保證合法，即一定是錯位之後的字串。例如輸入中不會出現大寫字母A。<br><br>
+                輸入範例<br>
+                O S, GOMR YPFSU/<br><br>
+                輸出範例<br>
+                I AM FINE TODAY.</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	char keyboard[]="`1234567890-=QWERTYUIOP[]\ASDFGHJKL;'ZXCVBNM, ./";
+	char a[1000];
+	gets(a);
+	for(int i=0;a[i];i++){
+		if(a[i]==' ') printf(" ");
+		else{
+			for(int j=0;keyboard[j];j++){
+				if(a[i]==keyboard[j]){
+					printf("%c", keyboard[j-1]);
+					break;
+				}
+			}
+		}
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>如答。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U12-1.html"><h3>U12-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U12-3.html"><h3>-->U12-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U11-2反數相加</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U11-2 反數相加</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入一個整數，將其前後顛倒後，得到一個新的數，求原數與新數之和。例如輸入 124，顛倒後得到 421，相加為 545。<br><br>
+                輸入範例 #1<br>
+                124<br><br>
+                
+                輸出範例 #1<br>
+                545<br><br>
+                
+                輸入範例 #2<br>
+                258<br><br>
+                
+                輸出範例 #2<br>
+                1110</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int n, c=0, b;
+	scanf("%d", &n);
+	b=n;
+	while(b>0){
+		c=c*10+b%10;
+		b/=10;
+	}
+	printf("%d", c+n);
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>如答。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U11-1.html"><h3>U11-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U11-3.html"><h3>-->U11-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

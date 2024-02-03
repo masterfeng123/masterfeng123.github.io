@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U06-1倒三角形</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U06-1 倒三角形</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入正整數 n&lt;=20，輸出一個 n 層的倒三角形。<br><br>輸入範例<br>
+                5<br><br>
+                
+                輸出範例<br>
+                *****<br>
+                ****<br>
+                ***<br>
+                **<br>
+                *</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int n, i;
+	scanf("%d", &n);
+	while(n>0){
+		for(i=0;i&lt;n;i++){
+			printf("*");
+		}
+		printf("\n");
+		n-=1;
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>利用n在迴圈中數值漸漸變小的特性，每跑一次迴圈，n就-1，使*能印出倒三角形的形狀。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U05-4.html"><h3>U05-4<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U06-2.html"><h3>-->U06-2</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

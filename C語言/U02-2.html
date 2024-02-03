@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U02-2圓柱表面積</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U02-2 圓柱表面積</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入圓柱的半徑與高度(實數)，輸出其表面積至小數點以下兩位(四捨五入)。(π=3.14159)<br><br>輸入範例<br>10.4 2.3<br><br>輸出範例<br>829.88</be></h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	float a, b;
+	scanf("%f %f", &a, &b);
+	printf("%.2f", (a*a*3.14159*2)+(a*2*3.14159*b));
+	return 0;
+}
+
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>設定浮點數a,b(這樣才能除出小數點)，掃描高度與半徑，直接在prtinf函式中輸入計算式。小數點取兩位使用.2f，若三位使用.3f以此類推。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U02-1.html"><h3>U02-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U02-3.html"><h3>-->U02-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

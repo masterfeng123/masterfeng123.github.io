@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U04-1數字平方和</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U04-1 數字平方和</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>和 n）之間所有整數的平方和。<br><br>輸入範例<br>2 4<br><br>輸出範例<br>29</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int m, n, sum, i, temp;
+	scanf("%d %d", &m, &n);
+	if (n>m){
+		temp=m;
+		m=n;
+		n=temp;
+	}
+	for(i=n;i<=m;i++){
+		sum+=i*i;
+	}
+	printf("%d", sum);
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>先輸入兩數至n,m，然後確定n小於m，接著利用迴圈取n~m，每一次都將平方加進sum，最後sum就是計算結果。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U03-4.html"><h3>U03-4<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U04-2.html"><h3>-->U04-2</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

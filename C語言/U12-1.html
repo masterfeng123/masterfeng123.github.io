@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U12-1生成元</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U12-1 生成元</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>如果一個數 x 加上 x 的各個數字之和得到 y，則稱 x 是 y 的一個生成元，例如 x=198，則 y=198+1+9+8=216，因此 198 是 216 的生成元。另一方面，我們也可以發現當 x=207 時，y=207+2+0+7=216，因此 207 也是 216 的生成元。本題要求輸入整數 n，程式須列出 n 的最小生成元。如果找不到生成元，則印出 no generator。輸入部份每行一個數，讀到檔尾結束；輸出的部份則針對每個輸入，輸出相對應的結果。<br><br>
+                輸入範例<br>
+                216<br>
+                20<br><br>
+                
+                輸出範例<br>
+                198<br>
+                no generator</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int y, check=0;
+	while(scanf("%d", &y)!=EOF){
+		for(int i=1;i&lt;=y;i++){
+			check=i;
+			check+=ccc(i);
+			if(check==y){
+				printf("%d\n", i);
+				break;
+			}
+			if(i==y){
+				printf("no generator\n");
+				break;
+			}
+		}
+	}
+	return 0;
+}
+
+int ccc(int n){
+	int d=0;
+	while(n>0){
+		d+=n%10;
+		n/=10;
+	}
+	return d;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>如答。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U11-4.html"><h3>U11-4<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U12-2.html"><h3>-->U12-2</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

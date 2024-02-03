@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U03-3判斷及調整成績</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U03-3 判斷及調整成績</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入成績 score，<br>
+                假設大於等於 90 分以上，評定等級為 A，且 score 改成 95；<br>
+                假設介於 [80, 90) 之間，評定等級為 B，且 score 改成 85；<br>
+                假設介於 [70, 80) 之間，評定等級為 C，且 score 改成 75；<br>
+                假設介於 [60, 70) 之間，評定等級為 D，且 score 改成 65；<br>
+                最後如果低於 60，評定等級為 F，且 score 不變。<br>
+                最後請將等級及成績做輸出。<br><br>輸入範例<br>68<br><br>輸出範例<br>D 65</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int a;
+	scanf("%d", &a);
+	if(a>=60){
+		if(a>=70){
+			if(a>=80){
+				if(a>=90){
+					a=95;
+					printf("A %d", a);
+				}
+				else
+				{
+					a=85;
+					printf("B %d", a);
+				}
+			}
+			else{
+				a=75;
+				printf("C %d", a);
+			}
+		}
+		else
+		{
+			a=65;
+			printf("D %d", a);
+		}
+	}
+	else{
+		printf("F %d", a);
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>利用巢狀式判斷句判斷實際分數落在哪一個區間，並給予相應調整。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U03-2.html"><h3>U03-2<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U03-4.html"><h3>-->U03-4</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>
