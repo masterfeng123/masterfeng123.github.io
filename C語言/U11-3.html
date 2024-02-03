@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U11-3第k個質數</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U11-3 第k個質數</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>第 1 個質數是 2，第 2 個質數是 3，第 3 個質數是 5，…，現在輸入 k，程式須輸出第 k 個質數。(k 小於1000)<br><br>
+                輸入範例<br>
+                1<br><br>
+                輸出範例<br>
+                2</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int k, check;
+	scanf("%d", &k);
+	for(int i=1;check&lt;=k;i++){
+		if(ccc(i)==1){
+			check++;
+			if(check==k){
+				printf("%d", i);
+				break;
+			}
+		}
+	}
+	return 0;
+}
+
+int ccc(int n){
+	int f=0;
+	for(int i=1;i&lt;=n;i++){
+		if(n%i==0) f++;
+	}
+	if(f==2) return 1;
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>如答。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U11-2.html"><h3>U11-2<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U11-4.html"><h3>-->U11-4</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U07-2找最大值及索引</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U07-2 找最大值及索引</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入三十個整數，請找出其中最大值及其位置索引。（位置從 0 開始計算，<br>最大數有多個時，以第一個出現的為最大數）<br><br>
+
+                輸入範例<br>0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9<br><br>輸出範例<br>9 9
+            </h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int a, max=0, p;
+	for(int i=0;i&lt;30;i++){
+		scanf("%d", &a);
+		if(a>max){
+			max=a;
+			p=i;
+		}
+	}
+	printf("%d %d", max, p);
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>迴圈當中，i代表的是a陣列當前所在的索引值，並在取得目前最大值時也將目前的i提取出來。
+            </h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U07-1.html"><h3>U07-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U07-3.html"><h3>-->U07-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

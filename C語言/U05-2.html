@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U05-2求兩數和(非零)</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U05-2 求兩數和(非零)</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>重覆讀取兩個數，並印出該兩數的和，直到兩個數皆為 0 為止。<br><br>輸入範例<br>
+                574 949<br>
+                113 854<br>
+                702 229<br>
+                0 0<br><br>
+                輸出範例<br>
+                1523<br>
+                967<br>
+                931</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int a=3, b=3;
+	while(a!=0 && b!=0){
+		
+		scanf("%d %d", &a, &b);
+		if(a==0 && b==0){
+			break;
+		}
+		printf("%d\n", a+b);
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>設while迴圈，並設定條件讓a=0且b=0時跳出迴圈。
+            </h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U05-1.html"><h3>U05-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U05-3.html"><h3>-->U05-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

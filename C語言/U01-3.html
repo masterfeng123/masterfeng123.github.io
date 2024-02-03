@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U01-3長方體體積</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U01-3.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U01-3 長方體體積</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入長方體的長、寬、高（皆整數），輸出其體積。<br><br>輸入範例<br>3 5 4<br><br>輸出範例<br>60</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int x, y, z;
+	scanf("%d %d %d", &x, &y, &z);
+	printf("%d", x*y*z);
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>宣告整數x,y,z，將輸入3 4 5 掃描到x,y,z中。接著印出三數相乘的結果。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U01-2.html"><h3>U01-2<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U02-1.html"><h3>-->U02-1</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U01-2字串輸出</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U01-2.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U01-2 字串輸出</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>請輸出以下的字串:The program uses 34% CPU resource.</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	printf("The program uses 34%% CPU resource.");
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>「%」在C語言程式中，是負責於字串當中提供%d、%c、%s等資料型態的存在，因此使用特殊方法「%%」使其可被辨識為一個字元。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U01-1.html"><h3>U01-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U01-3.html"><h3>-->U01-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U03-1三數排序</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U03-1 三數排序</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入三個正整數a、b、c，將a、b、c從小排到大並輸出。<br><br>輸入範例<br>8 5 6<br><br>輸出範例<br>5 6 8</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+	if (a>b)
+	{
+		if (b>c)
+		{
+			printf("%d %d %d", c, b, a);
+		}
+		else
+		{
+			if (c>a)
+			{
+				printf("%d %d %d", b, a, c);
+			}
+			else
+			{
+				printf("%d %d %d", b, c, a);
+			}
+		}
+	}
+	else//b>a
+	{
+		if (a>c)
+		{
+			printf("%d %d %d", c, a, b);
+		}
+		else
+		{
+			if (b>c)
+			{
+				printf("%d %d %d", a, c, b);
+			}
+			else
+			{
+				printf("%d %d %d", a, b, c);
+			}
+		}
+			
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>這裡我懶惰，直接用判斷句把每一種情況暴力出來。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U02-3.html"><h3>U02-3<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U03-2.html"><h3>-->U03-2</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

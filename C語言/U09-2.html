@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U09-2印三角形函數</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U09-2印三角形函數</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>寫一個程式，能根據輸入行數及符號列印三角形形狀，如以下範例所示。<br><br>
+
+                輸入範例 #1<br>
+                3#<br><br>
+                輸出範例 #1<br>
+                #<br>
+                ##<br>
+                ###<br><br>
+                輸入範例 #2<br>
+                5@<br><br>
+                輸出範例 #2<br>
+                @<br>
+                @@<br>
+                @@@<br>
+                @@@@<br>
+                @@@@@</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int n;
+	char a;
+	scanf("%d%c", &n, &a);
+	for(int i=1;i&lt;=n;i++){
+		for(int j=0;j&lt;i;j++){
+			printf("%c", a);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>偵測目標字元，然後使用雙層迴圈方式印出字元。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U09-1.html"><h3>U09-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U09-3.html"><h3>-->U09-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

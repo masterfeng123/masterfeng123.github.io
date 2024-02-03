@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U11-4得分</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U11-4得分</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>輸入一個 O 和 X 組成的字串 (長度為 1~50)，輸出其得分。計分規則如下：每個 O 的得分為目前連續出現的 O 的個數，X 的得分為 0。例如：OOXXOXXOOO 的得分為 1+2+0+0+1+0+0+1+2+3=10。<br><br>
+                輸入範例<br>
+                OOXXOXXOOO<br><br>
+                
+                輸出範例<br>
+                10</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int c=1, sum=0;
+	char a[50];
+	gets(a);
+	for(int i=0;a[i];i++){
+		if(a[i]=='O'){
+			sum+=c;
+			c++;
+		}
+		else{
+			c=1;
+		}
+	}
+	printf("%d", sum);
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>如答。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U11-3.html"><h3>U11-3<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U12-1.html"><h3>-->U12-1</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

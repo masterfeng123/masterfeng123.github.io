@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U12-3蛇行填數</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U12-3 蛇行填數</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>在 n×n 方陣裡填入1, 2, …, n×n (n≤8)，要求填成蛇形，從右上角出發，依順時針方向轉至中心點，如參考範例所示。
+                注意：使用 %3d 輸出整數格式。<br><br>
+                
+                輸入範例<br>
+                4<br><br>
+                輸出範例<br>
+                10  11  12  1<br>
+                 9  16  13  2<br>
+                 8  15  14  3<br>
+                 7   6   5  4</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int n, dir=2, a[9][9]={ {0} };
+int row, column, num=0;
+
+int main()
+{
+	scanf("%d", &n);
+	row=1;
+	column=n;
+	a[row][column]=++num;
+	while(1){
+		switch(dir){
+			case 0:while(row>1 && a[row-1][column]==0) {a[--row][column]=++num;} dir=1; break;
+			case 1:while(column&lt;n && a[row][column+1]==0) {a[row][++column]=++num;} dir=2; break;
+			case 2:while(row&lt;n && a[row+1][column]==0) {a[++row][column]=++num;} dir=3; break;
+			case 3:while(column>1 && a[row][column-1]==0) {a[row][--column]=++num;} dir=0; break;
+		}
+		if(num>=n*n){
+			break;
+		}
+	}
+	for(int i=0;i&lt;n;i++){
+		for(int j=0;j&lt;n;j++){
+			printf("%3d", a[i+1][j+1]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>dir為填數方向，row、column為目前位置，因為n小於8，可以設一個9x9且內容為空的a矩陣。num為目前記數，while迴圈執行到num=nxn的時候跳出迴圈，即代表矩陣完成。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U12-2.html"><h3>U12-2<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <h3 id="foot3">-->無下一題</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

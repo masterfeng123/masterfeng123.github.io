@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U08-2字串大小寫個數</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U08-2 字串大小寫個數</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>任意輸入一字串，求出其中大寫及小寫英文字母各有幾個？<br><br>
+
+                輸入範例<br>
+                GoodJob<br><br>
+                輸出範例<br>
+                Up = 2, Low = 5</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	int up=0, low=0;
+	char b[1000];
+	gets(b);
+	for(int i=0;b[i]!='\0';i++){
+		if(b[i]>='A' && b[i]&lt;='Z'){
+			up+=1;
+		}
+		if(b[i]>='a' && b[i]&lt;='z'){
+			low+=1;
+		}
+	}
+	printf("Up = %d, Low = %d", up, low);
+	return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>輸入字串進到陣列b，設定迴圈重複直到內容為空，每一次都會判斷該內容的儲存位元在大寫區間還是小寫區間。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U08-1.html"><h3>U08-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U08-3.html"><h3>-->U08-3</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>

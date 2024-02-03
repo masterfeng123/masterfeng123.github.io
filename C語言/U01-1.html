@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U01-1印出字串</title>
+    <link rel="website icon" type="png" href="/lobby.jpg">
+    <link href="U00-1.css" rel="stylesheet">
+    <script src="U00-1.js" async></script>
+
+</head>
+<body link="black" vlink="black" alink="black">
+
+    <header>
+        <h1><br><br><br><br><br></h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">首頁</a>
+        <a href="/skill.html">技術</a>
+        <a href="/life.html">生活</a>
+    </nav>
+
+    <section>
+        <h1>U01-1 印出字串</h1>
+        <div id="Question">
+            <h2>題目敘述：</h2>
+            <h4>印出下列字串:"This" and 'this' are the same string in Python.</h4>
+        </div>
+        <button class="copyy" onclick="clicked()">
+            <h3 class="option" id="success1">Copy</h3>
+            <h3 id="fail2">Copied!</h3>
+        </button>
+        <div class="ans">
+            <pre id="word">
+<code>
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    printf("\"This\" and \'this\' are the same string in Python.");
+    return 0;
+}
+</code>
+            </pre>
+        </div>
+        <div id="discuss">
+            <h4>「"」在C語言中是包裝字串的存在，因此需要用特殊方法「\"」將"包裝在字串中。</h4>
+        </div>
+        <div id="npage">
+            <a class="foot" href="U00-1.html"><h3>U00-1<--</h3></a>
+            <a class="foot" id="foot2" href="/C語言.html"><h3>回題目選單</h3></a>
+            <a class="foot" id="foot3" href="U01-2.html"><h3>-->U01-2</h3></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Masterfeng 2024</p>
+        
+    </footer>
+
+</body>
+</html>
