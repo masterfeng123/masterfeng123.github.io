@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+header {
+    text-align: center;
+    background-image: url("123.jpg");
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+section {
+    margin: 20px 0;
+}
+article {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    height: 150px;
+}
+
+h1{
+    text-align: center;
+}
+
+.line1{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.line2{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.line3{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#skill1{
+    margin-left: 15% ;
+    margin-right: 5%;
+}
+
+#skill2{
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+#skill3{
+    margin-left: 11%;
+    margin-right: 2.5%;
+}
+
+table{
+    background-color: wheat;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    margin-left: 45%;
+    margin-bottom: 10%;
+}
+
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+tr{
+    border: 0.5px solid rgb(160 160 160);
+}
+
+th{
+    border: 0.5px solid rgb(160 160 160);
+}
