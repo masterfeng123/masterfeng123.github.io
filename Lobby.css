@@ -164,6 +164,19 @@ a{
 
 #article7{
     padding: 2% 5%;
+    margin-right: 5%;
+    margin-left: 10%;
+    flex:1;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("001.jpg");
+    
+}
+
+#article7:hover{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.423)), url("001.jpg");
+}
+
+#article8{
+    padding: 2% 5%;
     margin-right: 10%;
     margin-left: 5%;
     flex:1;
@@ -171,7 +184,7 @@ a{
     
 }
 
-#article7:hover{
+#article8:hover{
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.423)), url("001.jpg");
 }
 
