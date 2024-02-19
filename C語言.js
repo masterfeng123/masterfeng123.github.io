@@ -332,3 +332,33 @@ function clicked13(){
         Q104P.id='Q1204';
     }
 }
+
+function clicked14(){
+    const U10 = document.getElementById('U13');
+    const U11 = document.getElementById('U13-clicked');
+    const Q101 = document.getElementById('Q2001');
+    const Q101P = document.getElementById('Q2001-clicked');
+    const Q102 = document.getElementById('Q2002');
+    const Q102P = document.getElementById('Q2002-clicked');
+    const Q103 = document.getElementById('Q2003');
+    const Q103P = document.getElementById('Q2003-clicked');
+    const Q104 = document.getElementById('Q2004');
+    const Q104P = document.getElementById('Q2004-clicked');
+
+
+    if(U10){
+        U10.id='U13-clicked';
+        Q101.id='Q2001-clicked';
+        Q102.id='Q2002-clicked';
+        Q103.id='Q2003-clicked';
+        Q104.id='Q2004-clicked';
+        
+    }
+    else{
+        U11.id='U13';
+        Q101P.id='Q2001';
+        Q102P.id='Q2002';
+        Q103P.id='Q2003';
+        Q104P.id='Q2004';
+    }
+}
