@@ -21,6 +21,22 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
 }
+
+.item{
+    cursor: pointer;
+    transition: .3s ;
+    list-style: none;
+}
+
+.item:hover{
+    color: #2ecce0;
+    border-bottom: 2px solid #2ecce0;
+}
+
+nav:has(.item:hover) .item:not(:hover){
+    color: #8f8f8f;
+}
+
 section {
     margin: 20px 0;
 }
@@ -87,6 +103,12 @@ footer {
     margin-bottom: 50px;
 }
 
+.line4{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
 
 #article3{
     padding: 2% 5%;
@@ -129,6 +151,19 @@ a{
 
 #article6{
     padding: 2% 5%;
+    margin-left: 5%;
+    margin-right: 10%;
+    flex:1;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("006.jpg");
+}
+
+#article6:hover{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.423)), url("006.jpg");
+}
+
+
+#article7{
+    padding: 2% 5%;
     margin-right: 10%;
     margin-left: 5%;
     flex:1;
@@ -136,7 +171,7 @@ a{
     
 }
 
-#article6:hover{
+#article7:hover{
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.423)), url("001.jpg");
 }
 
